@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  <h2>Sửa Hồ Sơ Cá Nhân</h2>
+  <form action="/profile/edit" method="POST">
+    <div class="mb-3">
+      <label for="username" class="form-label">Tên người dùng</label>
+      <input type="text" class="form-control" id="username" name="username" value="{{user.username}}" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" value="{{user.email}}" required>
+    </div>
+    <div class="mb-3">
+      <label for="phone" class="form-label">Số điện thoại</label>
+      <input type="text" class="form-control" id="phone" name="phone" value="{{user.phone}}">
+    </div>
+    <div class="mb-3">
+      <label for="address" class="form-label">Địa chỉ</label>
+      <input type="text" class="form-control" id="address" name="address" value="{{user.address}}">
+    </div>
+    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+  </form>
+</div>
